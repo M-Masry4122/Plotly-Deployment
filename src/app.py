@@ -29,5 +29,5 @@ def update_graph(year):
             hover_name='country', range_x=[50,50000], range_y=[25,90])
     return fig
 
-
-app.run_server()
+if __name__ == '__main__':
+    app.run_server(debug=True)
