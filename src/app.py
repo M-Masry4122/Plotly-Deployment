@@ -5,7 +5,7 @@ import pandas as pd
 df = px.data.gapminder()
 
 app = Dash(external_stylesheets=['https://codepen.io/chriddyp/pen/bWLwgP.css'])
-server = app.server
+server = app.server 
 
 app.layout = html.Div(children = [
 
@@ -30,4 +30,4 @@ def update_graph(year):
     return fig
 
 
-app.run_server(use_reloader=True)
+app.run_server()
